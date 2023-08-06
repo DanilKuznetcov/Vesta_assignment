@@ -1,0 +1,14 @@
+prefix=/home/danil/Documents/Vesta/venv
+exec_prefix=/home/danil/Documents/Vesta/venv
+libdir=/home/danil/Documents/Vesta/venv/lib
+includedir=/home/danil/Documents/Vesta/venv/include
+
+Name: FreeType 2
+URL: https://freetype.org
+Description: A free, high-quality, and portable font engine.
+Version: 24.3.18
+Requires: 
+Requires.private: zlib, libpng
+Libs: -L/home/danil/Documents/Vesta/venv/lib -lfreetype
+Libs.private: 
+Cflags: -I${includedir}/freetype2

@@ -1,0 +1,77 @@
+{
+  "arch": "x86_64",
+  "build": "py27_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/free/linux-64",
+  "constrains": [],
+  "date": "2016-07-14",
+  "depends": [
+    "python 2.7*"
+  ],
+  "extracted_package_dir": "/home/danil/anaconda3/pkgs/sip-4.18-py27_0",
+  "files": [
+    "bin/sip",
+    "include/python2.7/sip.h",
+    "lib/python2.7/site-packages/sip.pyi",
+    "lib/python2.7/site-packages/sip.so",
+    "lib/python2.7/site-packages/sipconfig.py",
+    "lib/python2.7/site-packages/sipconfig.pyc",
+    "lib/python2.7/site-packages/sipdistutils.py",
+    "lib/python2.7/site-packages/sipdistutils.pyc"
+  ],
+  "fn": "sip-4.18-py27_0.tar.bz2",
+  "license": "GPL3",
+  "link": {
+    "source": "/home/danil/anaconda3/pkgs/sip-4.18-py27_0",
+    "type": 1
+  },
+  "md5": "d8443d26dcaf83587f21eedb9c447da2",
+  "name": "sip",
+  "package_tarball_full_path": "/home/danil/anaconda3/pkgs/sip-4.18-py27_0.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/sip",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "include/python2.7/sip.h",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/sip.pyi",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/sip.so",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/sipconfig.py",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256_in_prefix": "aaf4e45bea220071d56d11aea6e9bcf102ae1d05158601ed71f59452e5fdf634"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/sipconfig.pyc",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/sipdistutils.py",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/sipdistutils.pyc",
+        "path_type": "hardlink"
+      }
+    ],
+    "paths_version": 1
+  },
+  "platform": "linux",
+  "requested_spec": "None",
+  "size": 270747,
+  "subdir": "linux-64",
+  "url": "https://repo.anaconda.com/pkgs/free/linux-64/sip-4.18-py27_0.tar.bz2",
+  "version": "4.18"
+}

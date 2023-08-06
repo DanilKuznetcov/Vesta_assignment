@@ -1,0 +1,13 @@
+prefix=/home/danil/Documents/Vesta/venv
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+modules=1
+
+Name: libXML
+Version: 2.10.3
+Description: libXML library version2.
+Requires:
+Libs: -L${libdir} -lxml2
+Libs.private: -L/home/danil/Documents/Vesta/venv/lib -lz -L/home/danil/Documents/Vesta/venv/lib -llzma  -L/home/danil/Documents/Vesta/venv/lib -L/home/danil/Documents/Vesta/venv/lib -licui18n -licuuc -licudata -lm  
+Cflags: -I${includedir}/libxml2 -I/home/danil/Documents/Vesta/venv/include 

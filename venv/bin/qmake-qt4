@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Note: We need to run qmake from its own location.
+# Creating a symlink *doesn't* work!
+/home/danil/Documents/Vesta/venv/lib/qt4/bin/qmake "$@"
