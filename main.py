@@ -1,17 +1,21 @@
-# coding=utf-8
-# This is a sample Python script.
+import mysql.connector as database
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+username = "vista_admin"
+password = "vista"
+db = "VISTA_DB"
+host = "localhost"
 
+connection = database.connect(
+    user=username,
+    password=password,
+    host=host,
+    database=db)
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print("Hi, {0}".format(name))  # Press Ctrl+F8 to toggle the breakpoint.
+cursor = connection.cursor()
 
+cursor.execute("INSERT INTO User (User_Fname,User_Lname,User_Username,User_Password,User_Email) VALUES ('AutoTom', 'Skagen', 'Stavanger', '4006', 'Norway')")
+connection.commit()
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+x = cursor.execute("select * from User;")
+print(cursor.fetchall())
+# INSERT INTO User (User_Fname,User_Lname,User_Username,User_Password,User_Email) VALUES ('Tom', 'Skagen', 'Stavanger', '4006', 'Norway');

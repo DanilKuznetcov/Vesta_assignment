@@ -1,0 +1,28 @@
+In total 4pages:
+	1)Authorasing
+	2)Refreshing password
+	3)Registration
+	4)Main
+	
+Stages:
+	1) Visual. Result - 4pages without functionality
+		1.1) authorizing - 2inbox, 3button, 2checkbox, 1link
+		1.2) Refreshing password - 1inbox, 2button
+		1.3) Registration - 4inbox, calendar, 2button
+		1.4) Main widget - employees list
+		1.5) Popup reminder (nearest birthdays)
+	2) Functionality
+	    2.1) Create an interaction diagram
+	    2.2) Implement authorizing interaction (two popup - registration and password reset)
+	    2.3) Implement authorizing interaction (popup - reminder)
+	3) Storing data - schema of data, ...
+	CREATE Database ...
+	CREATE USER 'vista_admin'@'localhost' IDENTIFIED BY 'vista';
+    GRANT ALL PRIVILEGES ON VISTA_DB.* TO 'vista_admin'@'localhost';
+	4) Installing instruction - ...
+
+Improvements:
+    1) Specify mail in registration (for furute password resseting)
+    2) Validation in registration (correct age / mail)
+    3) Multiple deleting
+    4) Store birthday as date datatype in database (there need implement a validation before it)

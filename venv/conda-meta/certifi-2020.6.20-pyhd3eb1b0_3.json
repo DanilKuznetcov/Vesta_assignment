@@ -1,7 +1,7 @@
 {
   "build": "pyhd3eb1b0_3",
   "build_number": 3,
-  "channel": "https://repo.anaconda.com/pkgs/main/noarch",
+  "channel": "https://conda.anaconda.org/anaconda/noarch",
   "constrains": [],
   "depends": [
     "python"
@@ -22,17 +22,16 @@
     "lib/python2.7/site-packages/certifi/__main__.pyc",
     "lib/python2.7/site-packages/certifi/core.pyc"
   ],
-  "fn": "certifi-2020.6.20-pyhd3eb1b0_3.conda",
-  "legacy_bz2_md5": "7e46166a83b373cdb73fdc060c7a4d7a",
+  "fn": "certifi-2020.6.20-pyhd3eb1b0_3.tar.bz2",
   "license": "ISC",
   "link": {
     "source": "/home/danil/anaconda3/pkgs/certifi-2020.6.20-pyhd3eb1b0_3",
     "type": 1
   },
-  "md5": "32bb6146e083af30d8570ca1c84e826c",
+  "md5": "7e46166a83b373cdb73fdc060c7a4d7a",
   "name": "certifi",
   "noarch": "python",
-  "package_tarball_full_path": "/home/danil/anaconda3/pkgs/certifi-2020.6.20-pyhd3eb1b0_3.conda",
+  "package_tarball_full_path": "/home/danil/anaconda3/pkgs/certifi-2020.6.20-pyhd3eb1b0_3.tar.bz2",
   "package_type": "noarch_python",
   "paths_data": {
     "paths": [
@@ -122,10 +121,10 @@
     "paths_version": 1
   },
   "requested_spec": "None",
-  "sha256": "81b91cd200370892f8dfb533401003f0efd72d627465524bf18a22a9b80e7a14",
-  "size": 159212,
+  "sha256": "d6293df72aafff678080c1514c38a5ae33adc83a2942aa7790c70ab7e39f849d",
+  "size": 162949,
   "subdir": "noarch",
   "timestamp": 1604070482618,
-  "url": "https://repo.anaconda.com/pkgs/main/noarch/certifi-2020.6.20-pyhd3eb1b0_3.conda",
+  "url": "https://conda.anaconda.org/anaconda/noarch/certifi-2020.6.20-pyhd3eb1b0_3.tar.bz2",
   "version": "2020.6.20"
 }

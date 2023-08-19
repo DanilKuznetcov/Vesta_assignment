@@ -1,0 +1,379 @@
+{
+  "arch": "x86_64",
+  "build": "py27_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/free/linux-64",
+  "constrains": [],
+  "date": "2016-08-16",
+  "depends": [
+    "python 2.7*"
+  ],
+  "extracted_package_dir": "/home/danil/anaconda3/pkgs/mysql-connector-python-2.0.4-py27_0",
+  "files": [
+    "lib/python2.7/site-packages/mysql/__init__.py",
+    "lib/python2.7/site-packages/mysql/__init__.pyc",
+    "lib/python2.7/site-packages/mysql/connector/__init__.py",
+    "lib/python2.7/site-packages/mysql/connector/__init__.pyc",
+    "lib/python2.7/site-packages/mysql/connector/authentication.py",
+    "lib/python2.7/site-packages/mysql/connector/authentication.pyc",
+    "lib/python2.7/site-packages/mysql/connector/catch23.py",
+    "lib/python2.7/site-packages/mysql/connector/catch23.pyc",
+    "lib/python2.7/site-packages/mysql/connector/charsets.py",
+    "lib/python2.7/site-packages/mysql/connector/charsets.pyc",
+    "lib/python2.7/site-packages/mysql/connector/connection.py",
+    "lib/python2.7/site-packages/mysql/connector/connection.pyc",
+    "lib/python2.7/site-packages/mysql/connector/constants.py",
+    "lib/python2.7/site-packages/mysql/connector/constants.pyc",
+    "lib/python2.7/site-packages/mysql/connector/conversion.py",
+    "lib/python2.7/site-packages/mysql/connector/conversion.pyc",
+    "lib/python2.7/site-packages/mysql/connector/cursor.py",
+    "lib/python2.7/site-packages/mysql/connector/cursor.pyc",
+    "lib/python2.7/site-packages/mysql/connector/custom_types.py",
+    "lib/python2.7/site-packages/mysql/connector/custom_types.pyc",
+    "lib/python2.7/site-packages/mysql/connector/dbapi.py",
+    "lib/python2.7/site-packages/mysql/connector/dbapi.pyc",
+    "lib/python2.7/site-packages/mysql/connector/django/__init__.py",
+    "lib/python2.7/site-packages/mysql/connector/django/__init__.pyc",
+    "lib/python2.7/site-packages/mysql/connector/django/base.py",
+    "lib/python2.7/site-packages/mysql/connector/django/base.pyc",
+    "lib/python2.7/site-packages/mysql/connector/django/client.py",
+    "lib/python2.7/site-packages/mysql/connector/django/client.pyc",
+    "lib/python2.7/site-packages/mysql/connector/django/compiler.py",
+    "lib/python2.7/site-packages/mysql/connector/django/compiler.pyc",
+    "lib/python2.7/site-packages/mysql/connector/django/creation.py",
+    "lib/python2.7/site-packages/mysql/connector/django/creation.pyc",
+    "lib/python2.7/site-packages/mysql/connector/django/introspection.py",
+    "lib/python2.7/site-packages/mysql/connector/django/introspection.pyc",
+    "lib/python2.7/site-packages/mysql/connector/django/schema.py",
+    "lib/python2.7/site-packages/mysql/connector/django/schema.pyc",
+    "lib/python2.7/site-packages/mysql/connector/django/validation.py",
+    "lib/python2.7/site-packages/mysql/connector/django/validation.pyc",
+    "lib/python2.7/site-packages/mysql/connector/errorcode.py",
+    "lib/python2.7/site-packages/mysql/connector/errorcode.pyc",
+    "lib/python2.7/site-packages/mysql/connector/errors.py",
+    "lib/python2.7/site-packages/mysql/connector/errors.pyc",
+    "lib/python2.7/site-packages/mysql/connector/fabric/__init__.py",
+    "lib/python2.7/site-packages/mysql/connector/fabric/__init__.pyc",
+    "lib/python2.7/site-packages/mysql/connector/fabric/balancing.py",
+    "lib/python2.7/site-packages/mysql/connector/fabric/balancing.pyc",
+    "lib/python2.7/site-packages/mysql/connector/fabric/caching.py",
+    "lib/python2.7/site-packages/mysql/connector/fabric/caching.pyc",
+    "lib/python2.7/site-packages/mysql/connector/fabric/connection.py",
+    "lib/python2.7/site-packages/mysql/connector/fabric/connection.pyc",
+    "lib/python2.7/site-packages/mysql/connector/locales/__init__.py",
+    "lib/python2.7/site-packages/mysql/connector/locales/__init__.pyc",
+    "lib/python2.7/site-packages/mysql/connector/locales/eng/__init__.py",
+    "lib/python2.7/site-packages/mysql/connector/locales/eng/__init__.pyc",
+    "lib/python2.7/site-packages/mysql/connector/locales/eng/client_error.py",
+    "lib/python2.7/site-packages/mysql/connector/locales/eng/client_error.pyc",
+    "lib/python2.7/site-packages/mysql/connector/network.py",
+    "lib/python2.7/site-packages/mysql/connector/network.pyc",
+    "lib/python2.7/site-packages/mysql/connector/optionfiles.py",
+    "lib/python2.7/site-packages/mysql/connector/optionfiles.pyc",
+    "lib/python2.7/site-packages/mysql/connector/pooling.py",
+    "lib/python2.7/site-packages/mysql/connector/pooling.pyc",
+    "lib/python2.7/site-packages/mysql/connector/protocol.py",
+    "lib/python2.7/site-packages/mysql/connector/protocol.pyc",
+    "lib/python2.7/site-packages/mysql/connector/utils.py",
+    "lib/python2.7/site-packages/mysql/connector/utils.pyc",
+    "lib/python2.7/site-packages/mysql/connector/version.py",
+    "lib/python2.7/site-packages/mysql/connector/version.pyc",
+    "lib/python2.7/site-packages/mysql_connector_python-2.0.4-py2.7.egg-info"
+  ],
+  "fn": "mysql-connector-python-2.0.4-py27_0.tar.bz2",
+  "license": "GPL2",
+  "link": {
+    "source": "/home/danil/anaconda3/pkgs/mysql-connector-python-2.0.4-py27_0",
+    "type": 1
+  },
+  "md5": "34c591c87ba787276f0b65eaee757633",
+  "name": "mysql-connector-python",
+  "package_tarball_full_path": "/home/danil/anaconda3/pkgs/mysql-connector-python-2.0.4-py27_0.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/python2.7/site-packages/mysql/__init__.py",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/__init__.pyc",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/__init__.py",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/__init__.pyc",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/authentication.py",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/authentication.pyc",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/catch23.py",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/catch23.pyc",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/charsets.py",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/charsets.pyc",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/connection.py",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/connection.pyc",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/constants.py",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/constants.pyc",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/conversion.py",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/conversion.pyc",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/cursor.py",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/cursor.pyc",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/custom_types.py",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/custom_types.pyc",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/dbapi.py",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/dbapi.pyc",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/django/__init__.py",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/django/__init__.pyc",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/django/base.py",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/django/base.pyc",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/django/client.py",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/django/client.pyc",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/django/compiler.py",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/django/compiler.pyc",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/django/creation.py",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/django/creation.pyc",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/django/introspection.py",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/django/introspection.pyc",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/django/schema.py",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/django/schema.pyc",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/django/validation.py",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/django/validation.pyc",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/errorcode.py",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/errorcode.pyc",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/errors.py",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/errors.pyc",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/fabric/__init__.py",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/fabric/__init__.pyc",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/fabric/balancing.py",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/fabric/balancing.pyc",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/fabric/caching.py",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/fabric/caching.pyc",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/fabric/connection.py",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/fabric/connection.pyc",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/locales/__init__.py",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/locales/__init__.pyc",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/locales/eng/__init__.py",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/locales/eng/__init__.pyc",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/locales/eng/client_error.py",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/locales/eng/client_error.pyc",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/network.py",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/network.pyc",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/optionfiles.py",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/optionfiles.pyc",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/pooling.py",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/pooling.pyc",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/protocol.py",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/protocol.pyc",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/utils.py",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/utils.pyc",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/version.py",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql/connector/version.pyc",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/mysql_connector_python-2.0.4-py2.7.egg-info",
+        "path_type": "hardlink"
+      }
+    ],
+    "paths_version": 1
+  },
+  "platform": "linux",
+  "requested_spec": "mysql-connector-python",
+  "size": 170269,
+  "subdir": "linux-64",
+  "url": "https://repo.anaconda.com/pkgs/free/linux-64/mysql-connector-python-2.0.4-py27_0.tar.bz2",
+  "version": "2.0.4"
+}

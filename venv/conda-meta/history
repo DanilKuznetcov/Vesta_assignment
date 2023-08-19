@@ -35,3 +35,20 @@
 +defaults/linux-64::sip-4.18-py27_0
 +defaults/linux-64::xz-5.4.2-h5eee18b_0
 # update specs: ['pyqt=4.11.4']
+==> 2023-08-06 20:47:38 <==
+# cmd: /home/danil/anaconda3/bin/conda install -c anaconda mysql-python
+# conda version: 23.5.2
+-defaults/linux-64::ca-certificates-2023.05.30-h06a4308_0
+-defaults/linux-64::openssl-3.0.10-h7f8727e_0
+-defaults/noarch::certifi-2020.6.20-pyhd3eb1b0_3
++anaconda/linux-64::ca-certificates-2023.01.10-h06a4308_0
++anaconda/linux-64::mysql-connector-c-6.1.11-h24aacaa_2
++anaconda/linux-64::mysql-python-1.2.5-py27h7b6447c_0
++anaconda/linux-64::openssl-1.1.1s-h7f8727e_0
++anaconda/noarch::certifi-2020.6.20-pyhd3eb1b0_3
+# update specs: ['mysql-python']
+==> 2023-08-06 20:47:53 <==
+# cmd: /home/danil/anaconda3/bin/conda install -c anaconda mysql-connector-python
+# conda version: 23.5.2
++defaults/linux-64::mysql-connector-python-2.0.4-py27_0
+# update specs: ['mysql-connector-python']
