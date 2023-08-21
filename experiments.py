@@ -1,34 +1,11 @@
-from PyQt4 import QtGui, QtCore
-import sys
+from datetime import date, timedelta
 
-class BASEGUICLS(QtGui.QDialog):
-    def __init__(self,parent=None):
-        super(BASEGUICLS, self).__init__(parent)
-        self.gridLayout = QtGui.QGridLayout()
-        self.title1=QtGui.QLabel('Hello')
-        self.title2=QtGui.QLabel('bye')
-        abutton=QtGui.QPushButton('Click me')
-        self.gridLayout.addWidget(self.title1,1,5)
-        self.gridLayout.addWidget(abutton,3,5)
-        self.setLayout(self.gridLayout)
-        abutton.clicked.connect(self.myfunc)
+today = date.today()
+delta = timedelta(days=7)
+weekLater = today + delta
 
-    def myfunc(self):
-        self.gridLayout.removeWidget(self.title1)
-        self.title1.deleteLater()
-        self.gridLayout.addWidget(self.title2,1,5)
-
-
-def main():
-    app = QtGui.QApplication(sys.argv)
-
-    ex = QtGui.QWidget()
-    ex.show()
-    ex2 = QtGui.QWidget()
-    ex2.show()
-
-    sys.exit(app.exec_())
-
-
-if __name__ == "__main__":
-    main()
+query = ("SELECT * FROM Employees WHERE (MONTH(Birthday) BETWEEN {} AND {})"
+         "and (DAY(Birthday) BETWEEN {} AND {});".
+         format(today.month, weekLater.month,today.day, weekLater.day))
+# select * from Employees where MONTH(Birthday)=1;
+print(query)

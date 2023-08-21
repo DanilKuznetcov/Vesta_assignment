@@ -1,0 +1,7 @@
+CREATE TABLE User (
+    User_ID INT(11) NOT NULL AUTO_INCREMENT,
+    Name VARCHAR(255) NULL ,
+    Password VARCHAR(255) NULL ,
+    Mail VARCHAR(255) NULL ,
+    PRIMARY KEY (User_ID)
+) ENGINE=InnoDB charset=utf8

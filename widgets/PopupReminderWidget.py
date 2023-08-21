@@ -2,6 +2,8 @@
 
 from PyQt4 import QtGui as qt
 from PyQt4 import QtCore as qt_core
+from Configurations import cursor
+from datetime import date, timedelta
 
 class Create(qt.QWidget):
     def __init__(self, parent=None):
@@ -9,7 +11,7 @@ class Create(qt.QWidget):
         self.initUI()
 
     def initUI(self):
-        self.resize(500, 200)
+        self.resize(700, 200)
         self.setWindowTitle(u'Напоминание')
 
         self.birthday_label = qt.QLabel(u"Именинники этой недели:")
@@ -18,7 +20,15 @@ class Create(qt.QWidget):
         self.table.horizontalHeader().setResizeMode(qt.QHeaderView.Stretch)
 
         # initiate table
-        data = [(u"Афанасьев Иван", u"+79215731342", u"4 июня 1995")]
+        today = date.today()
+        delta = timedelta(days=7)
+        weekLater = today + delta
+
+        query = ("SELECT * FROM Employees WHERE (MONTH(Birthday) BETWEEN {} AND {})"
+                 "and (DAY(Birthday) BETWEEN {} AND {});".
+                 format(today.month, weekLater.month, today.day, weekLater.day))
+        cursor.execute(query)
+        data = cursor.fetchall()
         self.table.setRowCount(len(data))
         self.table.setColumnCount(3)
 
@@ -27,8 +37,9 @@ class Create(qt.QWidget):
 
         # set data
         for row in range(len(data)):
-            for column in range(3):
-                self.table.setItem(row, column, qt.QTableWidgetItem(data[row][column]))
+            self.table.setItem(row, 0, qt.QTableWidgetItem(data[row][1]))
+            self.table.setItem(row, 1, qt.QTableWidgetItem(data[row][2]))
+            self.table.setItem(row, 2, qt.QTableWidgetItem(data[row][3].strftime("%d/%m/%Y")))
 
         self.ver_layout = qt.QVBoxLayout()
         self.ver_layout.addWidget(self.birthday_label)

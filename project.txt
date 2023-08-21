@@ -1,5 +1,5 @@
 In total 4pages:
-	1)Authorasing
+	1)Authorizing
 	2)Refreshing password
 	3)Registration
 	4)Main
@@ -14,7 +14,9 @@ Stages:
 	2) Functionality
 	    2.1) Create an interaction diagram
 	    2.2) Implement authorizing interaction (two popup - registration and password reset)
-	    2.3) Implement authorizing interaction (popup - reminder)
+	    2.3) Implement list of birthday functionality
+	        2.3.1) Read list from database
+	        2.3.2) Create new one Employee
 	3) Storing data - schema of data, ...
 	CREATE Database ...
 	CREATE USER 'vista_admin'@'localhost' IDENTIFIED BY 'vista';
@@ -22,7 +24,8 @@ Stages:
 	4) Installing instruction - ...
 
 Improvements:
-    1) Specify mail in registration (for furute password resseting)
+    1) Specify mail in registration (for future password resetting)
     2) Validation in registration (correct age / mail)
     3) Multiple deleting
     4) Store birthday as date datatype in database (there need implement a validation before it)
+    5) Used CamelCase instead snake_case

@@ -18,11 +18,13 @@ class Create(qt.QWidget):
         self.confirm = qt.QPushButton(self)
         self.confirm.setText(u"Сменить пароль")
         self.confirm.setStyleSheet("border-radius : 10; padding: 5px; border : 2px solid grey; background-color: rgb(169,169,169)")
+        self.confirm.clicked.connect(self.notImplementedPopUp)
 
 
         self.cancel = qt.QPushButton(self)
         self.cancel.setText(u"Отмена")
         self.cancel.setStyleSheet("border-radius : 10; padding: 5px; border : 2px solid red; background-color: rgb(220,20,60)")
+        self.cancel.clicked.connect(self.close)
 
         self.ver_Layout = qt.QVBoxLayout()
 
@@ -37,6 +39,15 @@ class Create(qt.QWidget):
 
     def show_myself(self, event):
         self.show()
+
+    def notImplementedPopUp(self):
+        popup = qt.QMessageBox(qt.QMessageBox.Critical,
+                               u"Warning",
+                               u"Sorry, but the function is not implemented",
+                               qt.QMessageBox.Ok,
+                               self)
+        popup.show()
+
     def quitApp (self):
         pass
         # db.name().close()

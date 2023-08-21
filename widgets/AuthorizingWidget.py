@@ -2,7 +2,9 @@
 
 from PyQt4 import QtGui as qt
 from PyQt4.QtCore import Qt as qt_allignes
-import RegistrationWidget, ResetPasswordWidget
+import Configurations
+from Configurations import cursor
+import os
 
 class Create(qt.QWidget):
     def __init__(self, parent=None):
@@ -10,13 +12,15 @@ class Create(qt.QWidget):
         self.initUI()
 
     def initUI(self):
-        self.resize(400, 200)
-        self.setWindowTitle(u'Окно авторизации')
+        self.resize(300, 200)
+        self.setWindowTitle(u'Авторизация')
 
         self.nameEdit = qt.QLineEdit()
         self.nameEdit.setPlaceholderText(u"Имя пользователя")
-        self.password_edit = qt.QLineEdit()
-        self.password_edit.setPlaceholderText(u"Пароль")
+
+        self.passwordEdit = qt.QLineEdit()
+        self.passwordEdit.setEchoMode(qt.QLineEdit.Password)
+        self.passwordEdit.setPlaceholderText(u"Пароль")
 
         self.sign_in = qt.QPushButton(self)
         self.sign_in.setText(u"Войти")
@@ -30,19 +34,20 @@ class Create(qt.QWidget):
         self.cancel = qt.QPushButton(self)
         self.cancel.setText(u"Отмена")
         self.cancel.setStyleSheet("border-radius : 10; padding: 5px; border : 2px solid red; background-color: rgb(220,20,60)")
+        self.cancel.clicked.connect(self.close)
 
-        self.remembeer_checker = qt.QCheckBox(u"Запомнить меня")
+        self.rememberMeChecker = qt.QCheckBox(u"Запомнить меня")
         self.show_password = qt.QCheckBox(u"Показать пароль")
+        self.show_password.stateChanged.connect(self.changePasswordVisibility)
 
         self.forgot_password = qt.QLabel(u"Забыли пароль?")
-        # self.forgot_password.mousePressEvent = self.doSomething
         self.forgot_password.setStyleSheet("color: blue; text-decoration: underline; vertical-align: middle;")
 
 
         self.ver_Layout = qt.QVBoxLayout()
 
         self.ver_Layout.addWidget(self.nameEdit)
-        self.ver_Layout.addWidget(self.password_edit)
+        self.ver_Layout.addWidget(self.passwordEdit)
 
         self.buttons_Layout = qt.QHBoxLayout()
         self.buttons_Layout.addWidget(self.sign_in)
@@ -50,27 +55,54 @@ class Create(qt.QWidget):
         self.buttons_Layout.addWidget(self.cancel)
         self.ver_Layout.addLayout(self.buttons_Layout)
 
-        self.ver_Layout.addWidget(self.remembeer_checker, 0, qt_allignes.AlignCenter)
+        self.ver_Layout.addWidget(self.rememberMeChecker, 0, qt_allignes.AlignCenter)
         self.ver_Layout.addWidget(self.show_password, 0, qt_allignes.AlignCenter)
 
         self.ver_Layout.addWidget(self.forgot_password, 0, qt_allignes.AlignCenter)
 
         self.setLayout(self.ver_Layout)
 
-    # def doSomething(self, event):
-    #     self.show()
+    def checkCredentials(self, user, password):
+        cursor.execute("select count(*) from User where Name=\"{}\" and Password=\"{}\";".format(user, password))
+        response = cursor.fetchall()
+        if response[0][0] >= 1:
+            return True
+        else:
+            return False
 
-    def authorizing(self):
-        self.close()
+    employeesBirthdayListWidget, popupReminderWidget = object, object
+    def authorize(self, from_cnfg=False):
+        # at the first authorization (if pressed remember me) - creds will be saved in Configuration.py
+        if from_cnfg == True:
+            user = Configurations.username
+            password = Configurations.password
+        else:
+            user = self.nameEdit.text()
+            password = self.passwordEdit.text()
 
+        if self.checkCredentials(user, password):
+            if self.rememberMeChecker.isChecked():
+                with open("Configurations.py", "r+") as f:
+                    lines = f.readlines()
+                    lines[-2] = u"username = u\"{}\"\n".format(user)
+                    lines[-1] = u"password = u\"{}\"".format(password)
+                    f.seek(0)
+                    f.writelines(lines)
+                    f.truncate()
+            self.close()
+            self.employeesBirthdayListWidget.user_name.setText(user)
+            self.employeesBirthdayListWidget.show()
+            self.popupReminderWidget.show()
+        else:
+            popup = qt.QMessageBox(qt.QMessageBox.Critical,
+                                      u"Ошибка авторизации",
+                                      u"Пользователь с такими данными не найден",
+                                      qt.QMessageBox.Ok,
+                                      self)
+            popup.show()
 
-    def quitApp (self):
-        pass
-        # db.name().close()
-        # sys.exit(0)
-
-    # def quitApp (self):
-    #     pass
-    #     # db.name().close()
-    #     # sys.exit(0)
-    #
+    def changePasswordVisibility(self):
+        if self.show_password.isChecked():
+            self.passwordEdit.setEchoMode(qt.QLineEdit.Normal)
+        else:
+            self.passwordEdit.setEchoMode(qt.QLineEdit.Password)
