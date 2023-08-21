@@ -2,12 +2,15 @@
 
 ## Usage
 ### 1. Registration
+
 ![image](https://github.com/DanilKuznetcov/Vesta_assignment/assets/49263683/08184e2a-d40e-4b72-91ee-02a9004ed917)
 
 For registation use medium button "Регистрация" and fill data in opened window
+
 ![image](https://github.com/DanilKuznetcov/Vesta_assignment/assets/49263683/014d93a0-ed02-4248-9c31-df814bf07669)
 ### 2. Authorisation
 Use created creentials for authorisation. Hint - use "Запомнить меня", for quick authorization.
+
 ![image](https://github.com/DanilKuznetcov/Vesta_assignment/assets/49263683/2befb9a6-a4a9-4e62-8e5b-1d5a4f84ade7)
 
 You can log out and change user - using top right link.
@@ -16,6 +19,7 @@ You can log out and change user - using top right link.
 
 ### 3. Administration
 When opening, there is a reminder with the nearest birthday people.
+
 ![image](https://github.com/DanilKuznetcov/Vesta_assignment/assets/49263683/2f51b1d7-9b15-4cd5-b597-3d0165d70f9c)
 
 For administration and navigation use buttons from the right
